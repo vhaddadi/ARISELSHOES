@@ -1,0 +1,293 @@
+<!--
+Vahideh Haddadi
+
+Student number:149955163
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>WEB222 Store</title>
+  </head>
+  <body>
+    <nav class="scrolled  navbar-nav">
+      <div id="h1C">
+        <h1>ARISEL</h1>
+      </div>
+      <ul>
+        <li id="index">
+          <a class="contact" href="index.html">
+            Home
+          </a>
+        </li>
+        <li id="menu-men">
+          <!--
+        <button type="button">Men</button>
+            <button type="button">Women</button>
+       -->
+        </li>
+        <li id="menu-women"></li>
+        <li>
+          <a class="contact" href="contact.html">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="./images/logo.png" alt="ShoesStore" />
+      </a>
+    </div>
+    <div class="nav-btn">
+      +
+    </div>
+
+    <header class="container-fluid" width="100%">
+      <img src="./images/headerW.jpg" />
+      <h1>ARISEL</h1>
+    </header>
+
+    <!--
+    <div id="men" class="container-fluid men"></div>
+    <div id="women" class="container-fluid women"></div>
+   -->
+    <!--
+<section class="form-row formC">
+
+ -->
+    <div class="container container border border-secondary px-6 py-5 mxy-2 mt-3 ">
+      <h1>Contact Form</h1>
+    </div>
+    <div class="container container border border-secondary px-6 py-5 mxy-2">
+      <form
+        id="customer_form "
+        action="https://formspree.io/xrgawjlj"
+        method="post "
+        class="form-col"
+      >
+        <div class="form-group col-md">
+          <label for="input-first"><span class="text-danger">* </span>First name</label>
+          <input
+            type="text"
+            id="input-first"
+            class="form-control"
+            placeholder="First name"
+            name="firstName"
+            autocomplete="given-name"
+            tabindex="1"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form-group col-md">
+          <label for="input-last"><span class="text-danger">* </span>Last name</label>
+          <input
+            type="text"
+            id="input-last"
+            class="form-control"
+            placeholder="Last name"
+            name="lastName"
+            autocomplete="family-name"
+            tabindex="2"
+            required=""
+          />
+        </div>
+
+        <div>
+          <div class="form-group col-md">
+            <label for="input-email"><span class="text-danger">* </span>Email Address</label>
+            <input
+              type="email"
+              id="input-email"
+              class="form-control"
+              placeholder="Email Address"
+              name="email"
+              autocomplete="email"
+              tabindex="3"
+              required=""
+              maxlength="50"
+            />
+          </div>
+          <div class="form-group col-md">
+            <label for="input-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="input-phone"
+              class="form-control"
+              placeholder="(000)-000-0000"
+              name="phone"
+              tabindex="4"
+              pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$"
+            />
+            <small class="form-text text-muted"
+              >Primary Phone number
+              <input
+                type="checkbox"
+                id="blankCheckbox"
+                name="toBeCall"
+                value="Yes"
+                aria-label="..."
+              />
+            </small>
+          </div>
+        </div>
+        <div>
+          <div class="form-group col-md">
+            <label for="input-address"><span class="text-danger"> </span>Address</label>
+            <input
+              type="text"
+              id="input-address"
+              class="form-control"
+              placeholder="Address"
+              name="address"
+              tabindex="5"
+              required=""
+            />
+          </div>
+        </div>
+        <div>
+          <div class="form-group col-md">
+            <label for="input-city"><span class="text-danger"> *</span>City</label>
+            <input
+              type="text"
+              id="input-city"
+              class="form-control"
+              name="City"
+              placeholder="City"
+              tabindex="6"
+              required=""
+            />
+          </div>
+          <div class="form-group col-md">
+            <label for="input-province"><span class="text-danger">*</span>Province</label>
+            <select id="input-province" class="form-control">
+              <option value="ontario">Ontario</option>
+              <option value="quebec">Quebec</option>
+              <option value="Monitoba">Monitoba</option>
+              <option value="Saskatchewan">Saskatchewan</option>
+              <option value="alberta">Alberta</option>
+              <option value="british columbio">British Columbia</option>
+              <option value="nova scotia">Nova Scotia</option>
+              <option value="new brunswick">New Brunswick</option>
+              <option value="price edward island">Prince Edward Island</option>
+              <option value="newfoundlad and labrador">Newfoundland and Labrador</option>
+              <option value="selecting">Choose from above option</option>
+            </select>
+          </div>
+          <div class="form-group col-md">
+            <label for="input-postalCode">Postal code</label>
+            <input
+              type="text"
+              id="input-postalCode"
+              class="form-control"
+              name="M0M 0M0"
+              placeholder=""
+              tabindex="7"
+              pattern="^([A-Za-z]\d[A-Za-z][-]?\d[A-Za-z]\d)"
+              required=""
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md">
+            <label for="input-problem"
+              ><span class="text-danger">* </span>what this is about:</label
+            >
+            <select id="input-problem" class="pInput form-control" name="problem" tabindex="8">
+              <option value="question">Questions</option>
+              <option value="comments">Comments</option>
+              <option value="order-problem">Order Problem</option>
+              <option value="default">...</option>
+            </select>
+          </div>
+          <div class="col form-group">
+            <div class="order hidden">
+              <label for="order-number"><span class="text-danger">* </span>Order Number</label>
+              <input
+                id="order-number"
+                class="form-control"
+                type="number"
+                name="Order Number"
+                autocomplete="off"
+                placeholder="Order Number"
+                required=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <textarea
+            id="comment-question"
+            class="form-control mr-3 ml-3"
+            tabindex="7"
+            rows="10"
+            maxlength="250"
+            placeholder="I am contacting ......."
+            required=""
+          ></textarea>
+        </div>
+        <button type="submit" class="row mt-3 btn btn-primary btn-lg mb-2 ml-5">Submit</button>
+      </form>
+    </div>
+    <!--
+</section>
+   -->
+
+    <main id="page"></main>
+
+    <footer>
+      <div class="d-inline-flex p-2">
+        <h3 class="pr-5">Subscribe for newsletter</h3>
+        <form class="form-inline" action="https://formspree.io/xrgawjlj" method="post">
+          <div class="form-group row">
+            <div class="col">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                autocomplete="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col">
+              <button type="submit" class="btn bg-gradient-primary text-white  border border-white">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
